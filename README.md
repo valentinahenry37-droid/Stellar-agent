@@ -192,6 +192,7 @@ await commerce.createJob(
 app.use("/api/summarize", marcPaywall({ price: 1_000_000, token: "USDC" }));
 
 // Auto-pay for API calls
+///////////////////////////
 const result = await marcFetch("https://agent.example/api/summarize", {
   method: "POST",
   body: JSON.stringify({ text: "..." }),
